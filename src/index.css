@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-cuerpo font-medium transition focus:outline-none focus-visible:ring-4 focus-visible:ring-primario/30 disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-primario { @apply btn bg-primario text-white hover:bg-primario-oscuro; }
+  .btn-secundario { @apply btn border-2 border-primario bg-white text-primario hover:bg-primario-claro; }
+  .campo { @apply w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-cuerpo placeholder:text-gray-400 focus:border-primario focus:outline-none focus:ring-4 focus:ring-primario/20; }
+  .etiqueta { @apply mb-1 block text-badge text-bosque; }
+  .tarjeta { @apply rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5; }
+}
